@@ -1,0 +1,7 @@
+#!/usr/bin/make -f
+
+# Enable experimental vendoring (https://github.com/runabove/sail/issues/6#issuecomment-150960155)
+export GO15VENDOREXPERIMENT=1
+
+%:
+	dh $@ --buildsystem=golang --with=golang

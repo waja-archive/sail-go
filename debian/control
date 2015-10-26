@@ -1,0 +1,42 @@
+Source: sail
+Section: devel
+Priority: extra
+Maintainer: Jan Wagner <Jan Wagner@cyconet.org>
+Build-Depends: debhelper (>= 9),
+               dh-golang,
+               golang-go (>= 2:1.5~),
+               golang-github-docker-docker-dev,
+               golang-github-ghodss-yaml-dev,
+               golang-github-google-go-querystring-dev,
+               golang-github-google-shlex-dev,
+               golang-github-howeyc-gopass-dev,
+               golang-github-inconshreveable-go-update-dev,
+               golang-github-inconshreveable-mousetrap-dev,
+               golang-github-opencontainers-runc-dev,
+               golang-github-spf13-cobra-dev,
+               golang-github-spf13-pflag-dev,
+               golang-golang-x-crypto-dev,
+               golang-gopkg-check.v1-dev,
+               golang-gopkg-yaml.v2-dev
+Standards-Version: 3.9.6
+Homepage: https://github.com/runabove/sail
+Vcs-Browser: https://github.com/waja/sail
+Vcs-Git: https://github.com/waja/sail.git
+XS-Go-Import-Path: github.com/runabove/sail
+
+Package: sail
+Architecture: any
+Built-Using: ${misc:Built-Using}
+Depends: ${shlibs:Depends},
+         ${misc:Depends}
+Description: Command line client for Sailabove Docker Hosting platform
+ Sailabove client Sailabove.com is a docker hosting solution aiming to
+ be as flexible as a container and as elegant as a sailboat.
+ .
+ Sign Up: http://labs.runabove.com/docker
+ Registry: https://registry.sailabove.io/
+ Get help: https://community.runabove.com/
+ Get started: https://community.runabove.com/kb/en/docker/getting-started-with-sailabove-docker.html
+ Reference documentation: https://community.runabove.com/kb/en/docker/documentation
+ Guides: http://community.runabove.com/kb/en/docker/
+ OVH Docker mailing-list: docker-subscribe@ml.ovh.net
